@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Store</title>
+   <style>
+    body{
+        margin: 10;
+        padding:0;
+        align-items: center;
+    }
+    .but{
+        display: flex;
+    }
+    .but button{
+        margin: 10px;
+    }
+   </style>
+  </head>
+  <body>
+    <div>
+        <form id="bookForm" onsubmit="create(event)">
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="author">Author</label><br>
+            <input type="text" id="author" name="author"><br>
+            <label for="genre">Genre</label><br>
+            <input type="text" id="genre" name="genre"><br>
+            <label for="price">Price</label><br>
+            <input type="text" id="price" name="price"><br>
+            <label for="brief">Brief</label><br>
+            <input type="text" id="brief" name="brief"><br>
+            <div class="but">
+            <button type="submit" id="submit">Submit</button>
+            <button type="button" id="edit" onclick="editBook()">Edit</button>
+            <button type="button" id="delete" onclick="del()">Delete</button>
+          </div>
+          </form>
+    </div>
+<script src="script.js"></script>
+  </body>
+</html>
